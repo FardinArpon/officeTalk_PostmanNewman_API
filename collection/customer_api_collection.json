@@ -1,0 +1,1233 @@
+{
+	"info": {
+		"_postman_id": "bd91eda5-b4e1-47df-b8c1-0e39eeb665d7",
+		"name": "officetalk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20340234"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"tamimjd5\",\r\n    \"email\": \"tamimjd5@gmail.com\",\r\n    \"fullname\": \"tamim wasif5\",\r\n    \"password\": \"tamim12369\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"tamimjd\",\r\n    \"fullname\": \"tamim wasif\",\r\n    \"email\": \"tamimjd13@gmail.com\",\r\n    \"password\": \"tamim12369\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "107"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6b-TKQFljiVZZL2ShQiZoim+jh6osk\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Apr 2022 07:04:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"email\": \"tamimjd12@gmail.com\",\n    \"username\": \"tamimjd11\",\n    \"fullname\": \"tamim wasif\",\n    \"profileImage\": null,\n    \"id\": 13\n}"
+				}
+			]
+		},
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"tamimjd5@gmail.com\",\r\n    \"password\": \"tamim12369\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "signin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"tamimjd2@gmail.com\",\r\n    \"password\": \"tamim12369\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1215"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4bf-sAynfsKrPu+io3q06yq03wpbQE8\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 Jun 2022 03:47:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbWltamQyIiwiZW1haWwiOiJ0YW1pbWpkMkBnbWFpbC5jb20iLCJpZCI6NSwiZnVsbG5hbWUiOiJ0YW1pbXdhc2lmMiIsInByb2ZpbGVJbWFnZSI6Imh0dHBzOi8vczMtYnVja2V0LW90LXRldG9uLnMzLmFtYXpvbmF3cy5jb20vc3JjL3VwbG9hZHMvYXBwbGllZF9qb2IucG5nTW9uX01heV8yM18yMDIyXzEyJTNBMzElM0E1Ml9HTVQlMkIwNjAwXyUyOEJhbmdsYWRlc2hfU3RhbmRhcmRfVGltZSUyOTc2OTgtb3JpZ2luYWwiLCJsYXN0bG9nZ2VkaW4iOiIyMDIyLTA2LTAzVDA2OjE0OjA4LjAwMFoiLCJpYXQiOjE2NTQ1NzM2MzMsImV4cCI6MTY1NDY2MDAzM30.tdY6hOzqp-HkOYIffJY17uedmIj-Qa0p95iYQcXeDBU\",\n    \"data\": {\n        \"username\": \"tamimjd2\",\n        \"email\": \"tamimjd2@gmail.com\",\n        \"id\": 5,\n        \"fullname\": \"tamimwasif2\",\n        \"profileImage\": \"https://s3-bucket-ot-teton.s3.amazonaws.com/src/uploads/applied_job.pngMon_May_23_2022_12%3A31%3A52_GMT%2B0600_%28Bangladesh_Standard_Time%297698-original\",\n        \"lastloggedin\": \"2022-06-03T06:14:08.000Z\",\n        \"iat\": 1654573633,\n        \"exp\": 1654660033\n    },\n    \"profile\": {\n        \"id\": 5,\n        \"fullname\": \"tamimwasif2\",\n        \"username\": \"tamimjd2\",\n        \"email\": \"tamimjd2@gmail.com\",\n        \"city\": null,\n        \"phoneNumber\": null,\n        \"aboutMe\": null,\n        \"profileImage\": \"https://s3-bucket-ot-teton.s3.amazonaws.com/src/uploads/applied_job.pngMon_May_23_2022_12%3A31%3A52_GMT%2B0600_%28Bangladesh_Standard_Time%297698-original\"\n    },\n    \"list\": [\n        4,\n        3,\n        1,\n        10,\n        9\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "edit profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbWltamQzIiwiZW1haWwiOiJ0YW1pbWpkM0BnbWFpbC5jb20iLCJ1c2VySWQiOjQsImZ1bGxuYW1lIjoidGFtaW0gd2FzaWYiLCJwcm9maWxlSW1hZ2UiOm51bGwsImlhdCI6MTY1MTExODM5NSwiZXhwIjoxNjUxMjA0Nzk1fQ.j4V32o14xDJqMBOt-EHURz-4GcS-xCBu2cf37TrdbIs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullname\": \"tamim wasifds\",\r\n    \"city\": \"Dhaka\",\r\n    \"phoneNumber\": \"01772544228\",\r\n    \"aboutMe\": \"this is tamim wasif\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/users/edit/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"edit",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "edit profile",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"abusaid@gmail.com\",\r\n    \"oldPassword\": \"12345678\",\r\n    \"newPassword\": \"12345678\",\r\n    \"newPasswordAgain\": \"12345678\",\r\n    \"fullname\": \"tamim wasif\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/users/28",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"28"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "313"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"139-dtpnXX3I7iuBiWkB8cizrg/V4sw\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Apr 2022 06:33:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 28,\n    \"fullname\": \"tamim wasif\",\n    \"username\": \"said7388\",\n    \"email\": \"abusaid@gmail.com\",\n    \"password\": \"$2a$10$C9EQmJorTzMfSOcxy7yFHOQRtWOG1ZIhTqCpcu8I2VFbsk14znuFG\",\n    \"salt\": \"$2a$10$C9EQmJorTzMfSOcxy7yFHO\",\n    \"profileImage\": \"https://i.ibb.co/FX9y91r/Ellipse-7.png\",\n    \"lastLoggedin\": \"2022-04-22T06:33:13.000Z\",\n    \"isLoggedin\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "search api",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbWltamQiLCJlbWFpbCI6InRhbWltamRAZ21haWwuY29tIiwidXNlcklkIjoyLCJmdWxsbmFtZSI6InRhbWltIHdhc2lmIiwicHJvZmlsZUltYWdlIjpudWxsLCJpYXQiOjE2NTEwMjgwODcsImV4cCI6MTY1MTExNDQ4N30.r3RcyZO6QiSkkTqviOXRicepjHHk4aG2FPRTVeVXXOw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users/search?s=tamim",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"search"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "tamim"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "search api",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/users/search?s=tamimjd9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"users",
+								"search"
+							],
+							"query": [
+								{
+									"key": "s",
+									"value": "tamimjd9"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "210"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d2-/hMdI1U6UVVngnROWprwZFqkVBI\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Apr 2022 04:49:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 10,\n        \"username\": \"tamimjd9\",\n        \"email\": \"tamimjd10@gmail.com\",\n        \"password\": \"$2a$10$x4lOevlsZdr/WEanBenffOhQvYRTAM/AAzWrzb/PQueNrAdosPsbC\",\n        \"salt\": \"$2a$10$x4lOevlsZdr/WEanBenffO\",\n        \"profileImage\": \"C:/desktop/image\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "verify user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/verify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"verify"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/verify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"verify"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "223"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"df-NwIjfg2Ml645aObW7h/7e0EMCkw\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 19 Apr 2022 05:03:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"sum\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbWltamQ5IiwiZW1haWwiOiJ0YW1pbWpkMTBAZ21haWwuY29tIiwidXNlcklkIjoxMCwiaWF0IjoxNjUwMzQ0MDQxLCJleHAiOjE2NTA0MzA0NDF9.7GeF4qWRYDvOXsHFLPNABcqva8HEiWu-aNDVcLOlkdM\"\n}"
+				}
+			]
+		},
+		{
+			"name": "signout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/auth/6/signout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"auth",
+						"6",
+						"signout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload file",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbWltamQzIiwiZW1haWwiOiJ0YW1pbWpkM0BnbWFpbC5jb20iLCJpZCI6NCwiZnVsbG5hbWUiOiJ0YW1pbSB3YXNpZmRzIiwicHJvZmlsZUltYWdlIjpudWxsLCJpYXQiOjE2NTE3MjA1NzEsImV4cCI6MTY1MTgwNjk3MX0.yhH_iEvJzpq31kyL90vp9yy5ifbFn6tIpRz-BWJPVrs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/user/Pictures/Screenshots/dropdown.png"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/upload/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"upload",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createprofile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/2/createprofile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"2",
+						"createprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "password change",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbWltamQzIiwiZW1haWwiOiJ0YW1pbWpkM0BnbWFpbC5jb20iLCJ1c2VySWQiOjQsImZ1bGxuYW1lIjoidGFtaW0gd2FzaWYiLCJwcm9maWxlSW1hZ2UiOm51bGwsImlhdCI6MTY1MTExNjY4MywiZXhwIjoxNjUxMjAzMDgzfQ.QtBoLc-kFcrW4O23N5HnSjY4oX2SDiQN1wqDgTFB1J0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"newpass\": \"tamim123\",\r\n    \"oldpass\": \"tamim12369\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/users/4/changepassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"4",
+						"changepassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send message",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbWltamQyIiwiZW1haWwiOiJ0YW1pbWpkMkBnbWFpbC5jb20iLCJpZCI6NSwiZnVsbG5hbWUiOiJ0YW1pbXdhc2lmMiIsInByb2ZpbGVJbWFnZSI6Imh0dHBzOi8vczMtYnVja2V0LW90LXRldG9uLnMzLmFtYXpvbmF3cy5jb20vc3JjL3VwbG9hZHMvYXBwbGllZF9qb2IucG5nTW9uX01heV8yM18yMDIyXzEyJTNBMzElM0E1Ml9HTVQlMkIwNjAwXyUyOEJhbmdsYWRlc2hfU3RhbmRhcmRfVGltZSUyOTc2OTgtb3JpZ2luYWwiLCJsYXN0bG9nZ2VkaW4iOiIyMDIyLTA2LTE1VDA5OjQ5OjQyLjAwMFoiLCJpYXQiOjE2NTUzNTE5MDIsImV4cCI6MTY1NTQzODMwMn0.C4XHW_KPeZP_qEDXo5Mc4Kb0B9j1qK07VU1eJ9Uyqz8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"alhamdulillah3\",\r\n    \"senderId\": \"4\",\r\n    \"type\": \"text\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/chat/5/sendMessage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"chat",
+						"5",
+						"sendMessage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullname\": \"tamim wasif\",\r\n    \"username\": \"tamimjd\",\r\n    \"email\": \"tamimwasifjd@gmail.com\",\r\n    \"password\": \"tamim12369\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lastloggedin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users/21/activestatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"21",
+						"activestatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all message with u",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/chat/5/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"chat",
+						"5",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/conversations/clearNotifications?chatId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"conversations",
+						"clearNotifications"
+					],
+					"query": [
+						{
+							"key": "chatId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "unread_message",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/users/message/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"users",
+						"message",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "markasread",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"senderId\": \"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/chat/4/markAsRead",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"chat",
+						"4",
+						"markAsRead"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "union",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/chat/union",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"chat",
+						"union"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "approval",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"desicion\": \"accepted\",\r\n    \"senderId\": \"13\",\r\n    \"receiverId\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/chat/approval",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"chat",
+						"approval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "multiple iamge upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/user/Pictures/Screenshots/53.png",
+							"disabled": true
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/user/Downloads/videoplayback (1).mp4",
+							"disabled": true
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": [],
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/uploadimages/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"uploadimages",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zip upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/user/Downloads/APIiFormBuilder-master.zip"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/uploadzip/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"uploadzip",
+						"1"
+					],
+					"query": [
+						{
+							"key": "files",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete message",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbWltamQyIiwiZW1haWwiOiJ0YW1pbWpkMkBnbWFpbC5jb20iLCJpZCI6NSwiZnVsbG5hbWUiOiJ0YW1pbXdhc2lmMiIsInByb2ZpbGVJbWFnZSI6Imh0dHBzOi8vczMtYnVja2V0LW90LXRldG9uLnMzLmFtYXpvbmF3cy5jb20vc3JjL3VwbG9hZHMvYXBwbGllZF9qb2IucG5nTW9uX01heV8yM18yMDIyXzEyJTNBMzElM0E1Ml9HTVQlMkIwNjAwXyUyOEJhbmdsYWRlc2hfU3RhbmRhcmRfVGltZSUyOTc2OTgtb3JpZ2luYWwiLCJsYXN0bG9nZ2VkaW4iOiIyMDIyLTA2LTE1VDA5OjQ5OjQyLjAwMFoiLCJpYXQiOjE2NTUzNTE5MDIsImV4cCI6MTY1NTQzODMwMn0.C4XHW_KPeZP_qEDXo5Mc4Kb0B9j1qK07VU1eJ9Uyqz8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/chat/deletemessage/1344/4/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"chat",
+						"deletemessage",
+						"1344",
+						"4",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creategroup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/user/Pictures/Screenshots/arrow sign.png"
+						},
+						{
+							"key": "people",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "people",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "people",
+							"value": "8",
+							"type": "text"
+						},
+						{
+							"key": "creator[id]",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "groupname",
+							"value": "tamim's group",
+							"type": "text"
+						},
+						{
+							"key": "creator[fullname]",
+							"value": "Tamim Wasif",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/group/creategroup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						"creategroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "single group info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/group/:groupid/:userid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						":groupid",
+						":userid"
+					],
+					"variable": [
+						{
+							"key": "groupid",
+							"value": "26"
+						},
+						{
+							"key": "userid",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "specific group messages",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/group/:groupId/groupmessages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						":groupId",
+						"groupmessages"
+					],
+					"variable": [
+						{
+							"key": "groupId",
+							"value": "40"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "groupsend message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"hadsfasfsadf\",\r\n    \"senderId\": \"5\",\r\n    \"type\": \"text\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/group/:groupId/sendMessageGroup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						":groupId",
+						"sendMessageGroup"
+					],
+					"variable": [
+						{
+							"key": "groupId",
+							"value": "42"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jwt verify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRhbWltamQyIiwiZW1haWwiOiJ0YW1pbWpkMkBnbWFpbC5jb20iLCJpZCI6NSwiZnVsbG5hbWUiOiJ0YW1pbXdhc2lmMiIsInByb2ZpbGVJbWFnZSI6Imh0dHBzOi8vczMtYnVja2V0LW90LXRldG9uLnMzLmFtYXpvbmF3cy5jb20vc3JjL3VwbG9hZHMvYXBwbGllZF9qb2IucG5nTW9uX01heV8yM18yMDIyXzEyJTNBMzElM0E1Ml9HTVQlMkIwNjAwXyUyOEJhbmdsYWRlc2hfU3RhbmRhcmRfVGltZSUyOTc2OTgtb3JpZ2luYWwiLCJsYXN0bG9nZ2VkaW4iOiIyMDIyLTA2LTIwVDEwOjA0OjQyLjAwMFoiLCJpYiOjE2NTU3OTExMjgsImV4cCI6MTY1NTg3NzUyOH0.QREHb3_oSq61DHkLZFlzBtmZYon0XRjix4LFxlu5oTo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/auth/verifyjwt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"auth",
+						"verifyjwt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "markAsReadGroup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/group/:groupId/markAsRead",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						":groupId",
+						"markAsRead"
+					],
+					"variable": [
+						{
+							"key": "groupId",
+							"value": "42"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
